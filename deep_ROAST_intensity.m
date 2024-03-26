@@ -1,5 +1,5 @@
 
-function elec = deep_ROAST_opt(ROI,F_x_brain,F_y_brain,F_z_brain,ori)
+function elec = deep_ROAST_intensity(ROI,F_x_brain,F_y_brain,F_z_brain,ori)
 % ROI: desired targeting region. Formatted as [x1,y1,z1;x2,y2,x2..], in
 % voxel 
 % F_xyz: 3-dimensional forward matrix (n_short * num_elec)
@@ -33,7 +33,7 @@ d0 = ones(size(F_x_brain,1),1);
 
 %If not ignoring direction
 cvx_begin
-    disp('cvx_optimization')
+    disp('start cvx optimization...')
     variable s(num_elec,1); 
   
     maximize(sum((ori'*(cat(2, F_x_brain*s,F_y_brain*s,F_z_brain*s)')*target_sources)));

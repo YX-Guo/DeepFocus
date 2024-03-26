@@ -54,12 +54,12 @@ for i = 1:length(E_des)
         break
     end
     elec = s;
-    disp("searched E_des value")
     
-    tag = strcat(int2str(ROI(1)),"_",int2str(ROI(2)),"_",int2str(ROI(3)),"_k=",num2str(k),"_Edes=",num2str(E_des(i)),"_scalp_focal");
+    tag = strcat(int2str(ROI(1)),"_",int2str(ROI(2)),"_",int2str(ROI(3)),"_k=",num2str(k),"_Edes=",num2str(E_des(i)));
     [Emag, Ef] = calc_and_visual_res(elec,F_x_brain,F_y_brain,F_z_brain,head_volume,tag);
     res = struct('tag',tag,'electrode',elec,'Emag',Emag,'Ef',Ef,'ori',ori,'D',D,'V',V);
-    file_name = convertStringsToChars(strcat("example/Deep_test_v3/BA25/",tag,".mat"));
+    file_name = convertStringsToChars(strcat("example/max_focality/",tag,".mat"));
     save(file_name,'res','-v7.3');
+    
 end
 end
