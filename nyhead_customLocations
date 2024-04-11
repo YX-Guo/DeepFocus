@@ -1,0 +1,28 @@
+
+
+custom_sph_r1 210 305 326
+custom_sph_r2 210 314 325
+custom_sph_r3 210 292 315
+custom_sph_r4 210 282 311
+custom_sph_r5 218 285 300
+
+
+custom_sph_l1 180 308 323
+custom_sph_l2 180 295 313
+custom_sph_l3 185 311 325
+custom_sph_l4 185 272 298
+custom_sph_l5 187 267 298
+
+custom_eth_l1 195 375 309 
+custom_eth_l2 195 362 309
+custom_eth_l3 195 349 309
+custom_eth_l4 195 335 311
+
+custom_eth_r1 199 374 309
+custom_eth_r2 199 362 309
+custom_eth_r3 199 349 309
+custom_eth_r4 199 334 311
+
+custom_temple_l 35 279 356
+custom_temple_r 357 281 356
+
