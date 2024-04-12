@@ -1,6 +1,6 @@
 This is the code repository for the paper: DeepFocus: A Transnasal Approach for Optimized Deep Brain Stimulation of Reward Circuit Nodes
 
-DeepFocus is built on ROAST. Please download ROAST first and replace functions with the ones in this repository. 
+DeepFocus is built on [ROAST](https://github.com/andypotatohy/roast). Please download ROAST first and replace functions with the ones in this repository. 
 
 To generate the forward matrix:
 - Run all the forward simulations with standard ROAST commands. Conduct simulation with 1mA at the active electrodes and -1mA at the return electrode (e.g. Iz). The paper uses New York head model, and transnasal electrode locations are included in nyhead_customLocations.
