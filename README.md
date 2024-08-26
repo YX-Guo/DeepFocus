@@ -12,6 +12,12 @@ To target a specific ROI voxel inside the brain:
 - The ROI’s should be organized as N*3 matrix. Note that the optimization method targets these ROI’s one at a time.
 - oris is the desired orientation of stimulation at the target ROI/s, and should also be organized as a N*3 matrix.
 
+To visualize Monte Carlo samples of the cribriform plate:
+- Load the samples and New York head mask (both in .nii format) in the Slicer software. 
+- The New York head mask contains tissue segmentations, and the Monte Carlo samples are binary masks, with 1 indicating voxels corresponding to foramina on the cribriform plate.
+- In the Slicer ["Views" panel](https://slicer.readthedocs.io/en/latest/user_guide/user_interface.html), click on the "pin" button (view controls) to set the New York head as the background and the Monte Carlo samples as the foreground. 
+- Adjust the foreground volume opacity if needed.  
+
 References:
 Huang, Y., Datta, A., Bikson, M., Parra, L.C., Realistic vOlumetric-Approach to Simulate Transcranial Electric Stimulation -- ROAST -- a fully automated open-source pipeline, Journal of Neural Engineering, Vol. 16, No. 5, 2019 (prefered reference)
 
